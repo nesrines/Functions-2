@@ -9,43 +9,50 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<main>
-    <section id="Calculator">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="calc">
-                        <div class="amount-inp">
-                            <h6>Kredit məbləği</h6>
-                            <input id="Amount" type="number" min="1" max="60000">
-                            <span>AZN</span>
+    <main>
+        <section id="Calculator">
+            <div class="container">
+                <div class="center">
+                    <h2>Kredit kalkulyatoru</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="calc">
+                                <div class="inp">
+                                    <h6>Kredit məbləği</h6>
+                                    <input id="Amount" type="number" min="1" max="60000">
+                                    <span>AZN</span>
+                                </div>
+                                <div class="inp">
+                                    <h6>Kredit müddəti</h6>
+                                    <input id="Period" type="number" min="1" max="60">
+                                    <span>ay</span>
+                                </div>
+                                <div class="inp">
+                                    <h6>Faiz dərəcəsi</h6>
+                                    <input id="Percent" type="number" min="5" max="30">
+                                    <span>%</span>
+                                </div>
+                                <button id="Calculate">Hesabla</button>
+                            </div>
                         </div>
-                        <div class="period-inp">
-                            <h6>Kredit müddəti</h6>
-                            <input id="Period" type="number" min="1" max="60">
-                            <span>ay</span>
+                        <div class="col-md-6">
+                            <div class="result">
+                                <div class="monthly-box">
+                                    <p id="Monthly">0 AZN</p>
+                                    <span>Aylıq ödəniş</span>
+                                </div>
+                                <div class="total-box">
+                                    <p id="Total">0 AZN</p>
+                                    <span>Ümumi məbləğ</span>
+                                </div>
+                                <button id="Order">Sifariş edin</button>
+                            </div>
                         </div>
-                        <div class="percentage">
-                            <h6>Faiz dərəcəsi</h6>
-                            <input id="Percent" type="number" min="5" max="30">
-                            <span>%</span>
-                        </div>
-                        <button id="Calculate">Hesabla</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="result">
-                        <span class="d-block fw-500 fs-16">Aylıq ödəniş</span>
-                        <span id="Monthly"></span>
-                        <span class="d-block fw-500 fs-16">Ümumi məbləğ</span>
-                        <span id="Total"></span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
-
+        </section>
+    </main>
     <script src="js/app.js"></script>
 </body>
 </html>
