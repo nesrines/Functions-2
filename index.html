@@ -15,27 +15,30 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="calc">
-                        <div class="amount">
+                        <div class="amount-inp">
                             <h6>Kredit məbləği</h6>
-                            <input type="number" min="1" max="60000">
+                            <input id="Amount" type="number" min="1" max="60000">
                             <span>AZN</span>
                         </div>
-                        <div class="period">
+                        <div class="period-inp">
                             <h6>Kredit müddəti</h6>
-                            <input type="number" min="1" max="60">
+                            <input id="Period" type="number" min="1" max="60">
                             <span>ay</span>
                         </div>
                         <div class="percentage">
                             <h6>Faiz dərəcəsi</h6>
-                            <input type="number" min="">
+                            <input id="Percent" type="number" min="5" max="30">
                             <span>%</span>
                         </div>
-                        <button>Hesabla</button>
+                        <button id="Calculate">Hesabla</button>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="result">
-                        
+                        <span class="d-block fw-500 fs-16">Aylıq ödəniş</span>
+                        <span id="Monthly"></span>
+                        <span class="d-block fw-500 fs-16">Ümumi məbləğ</span>
+                        <span id="Total"></span>
                     </div>
                 </div>
             </div>
